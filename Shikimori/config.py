@@ -20,7 +20,7 @@ class Config(object):
     LOG_CHANNEL = -1004424123752
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"
+    SQLALCHEMY_DATABASE_URI = "postgresql://neondb_owner:npg_QapsEzyR2x0Y@ep-long-silence-atr7w1c7.c-9.us-east-1.aws.neon.tech/neondb?sslmode=require"
     LOAD = []
     NO_LOAD = []
     WEBHOOK = False
