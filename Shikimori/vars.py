@@ -61,12 +61,9 @@ if ENV:
     AI_API_KEY = os.environ.get("AI_API_KEY", None)
     API_WEATHER = os.environ.get("API_WEATHER", None)
     WALL_API = os.environ.get("WALL_API", None)
-    REDIS_URL = os.environ.get("REDIS_URL")
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
-    SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
+    SPAMWATCH_SUPPORT_CHAT = os.environ.get("TeamXHQ", None)
     ARQ_API_KEY = os.environ.get("ARQ_API", None)
-    HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
-    HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     APOD_API_KEY = os.environ.get("APOD_API_KEY", None)
     ANIME_NAME = os.environ.get("ANIME_NAME", "Demon slayer")
     START_MEDIA = os.environ.get("START_MEDIA", "https://i.ibb.co/Sjj4Jw5/tmpzyrteemm.jpg")
@@ -136,8 +133,6 @@ else:
     CERT_PATH = Config.CERT_PATH
     API_ID = Config.API_ID
     API_HASH = Config.API_HASH
-    HEROKU_API_KEY = Config.HEROKU_API_KEY
-    HEROKU_APP_NAME = Config.HEROKU_APP_NAME
     DB_URI = Config.SQLALCHEMY_DATABASE_URI
     LOAD = Config.LOAD
     NO_LOAD = Config.NO_LOAD
