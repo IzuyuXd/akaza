@@ -15,14 +15,14 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 123456  # integer value, dont use ""
-    API_HASH = "awoo"
-    BOT_TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 1606221784  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "SOME1HING"
-    SUPPORT_CHAT = "tyranteyeeee"  # Your own group for support, do not add the @
+    API_ID = 16136051  # integer value, dont use ""
+    API_HASH = "0f558cfd8541ededbd14e0b22768af5d"
+    BOT_TOKEN = "8692160358:AAGhX1lZIEHwi7eYNMIBRDNBPx57kPe6bN4"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID = 7200052671  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "Izuyw"
+    SUPPORT_CHAT = "BotSupportGc"  # Your own group for support, do not add the @
     LOG_CHANNEL = (
-        -1001150905176
+        -1004424123752
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     # RECOMMENDED
@@ -31,7 +31,7 @@ class Config(object):
     NO_LOAD = []
     WEBHOOK = False
     URL = None
-    SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
+    SPAMWATCH_SUPPORT_CHAT = "@BotSupportGc"
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
@@ -69,15 +69,15 @@ class Config(object):
     ARQ_API = "awoo"
     APOD_API_KEY = "awoo"
     REDIS_URL = "awoo"
-    ANIME_NAME = "Shikimori's Not Just a Cutie"
+    ANIME_NAME = "Demon Slayer"
     START_MEDIA = "https://telegra.ph/file/9235d57807362b4e227a3.mp4"
-    BOT_USERNAME = "micchon_shikimori_bot"
-    UPDATE_CHANNEL = "Shikimori_bot_Updates"
+    BOT_USERNAME = "AkazaProbot"
+    UPDATE_CHANNEL = "BotLogsX"
     ALIVE_MEDIA = "https://telegra.ph/file/2b04f7812f22b983f8a10.mp4"
     BOT_ID = 5169508699
     STATS_IMG = "awoo"
-    NETWORK_USERNAME = "VoidxNetwork"
-    NETWORK = "【V๏ɪ፝֟𝔡】»Network«"
+    NETWORK_USERNAME = "TeamXAssociation"
+    NETWORK = "T-X"
     INLINE_IMG = "https://telegra.ph/file/8cec66d01df8c0071ebaa.jpg"
     API_WEATHER = "awoo"
     OWNER_WELCOME_MEDIA = ""
