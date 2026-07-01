@@ -1,32 +1,26 @@
-# Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
 import json
 import os
 
-from Shikimori.vars import HEROKU_API_KEY, HEROKU_APP_NAME, REDIS_URL
 
 def get_user_list(config, key):
-    with open("{}/Senku/{}".format(os.getcwd(), config), "r") as json_file:
+    with open(f"{os.getcwd()}/Senku/{config}", "r") as json_file:
         return json.load(json_file)[key]
 
 
-# Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
 class Config(object):
     LOGGER = True
-    # REQUIRED
-    # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 16136051  # integer value, dont use ""
+    # REQUIRED
+    API_ID = 16136051
     API_HASH = "0f558cfd8541ededbd14e0b22768af5d"
-    BOT_TOKEN = "8692160358:AAGhX1lZIEHwi7eYNMIBRDNBPx57kPe6bN4"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 7200052671  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    BOT_TOKEN = "8692160358:AAGhX1lZIEHwi7eYNMIBRDNBPx57kPe6bN4"
+    OWNER_ID = 7200052671
     OWNER_USERNAME = "Izuyw"
-    SUPPORT_CHAT = "BotSupportGc"  # Your own group for support, do not add the @
-    LOG_CHANNEL = (
-        -1004424123752
-    )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
+    SUPPORT_CHAT = "BotSupportGc"
+    LOG_CHANNEL = -1004424123752
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"
     LOAD = []
     NO_LOAD = []
     WEBHOOK = False
@@ -34,53 +28,49 @@ class Config(object):
     SPAMWATCH_SUPPORT_CHAT = "@BotSupportGc"
 
     # OPTIONAL
-    ##List of id's -  (not usernames) for users which have sudo access to the bot.
     DRAGONS = get_user_list("elevated_users.json", "sudos")
-    ##List of id's - (not usernames) for developers who will have the same perms as the owner
     DEV_USERS = get_user_list("elevated_users.json", "devs")
-    ##List of id's (not usernames) for users which are allowed to gban, but can also be banned.
     DEMONS = get_user_list("elevated_users.json", "supports")
-    # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
     TIGERS = get_user_list("elevated_users.json", "tigers")
     WOLVES = get_user_list("elevated_users.json", "whitelists")
+
     CERT_PATH = None
     PORT = 5000
-    DEL_CMDS = True  # Delete commands that users dont have access to, like delete /ban if a non admin uses it.
+    DEL_CMDS = True
     STRICT_GBAN = True
-    WORKERS = (
-        8  # Number of subthreads to use. Set as number of threads your processor uses
-    )
-    ALLOW_EXCL = True  # Allow ! commands as well as / (Leave this to true so that blacklist can work)
-    CASH_API_KEY = (
-        "awoo"  # Get your API key from https://www.alphavantage.co/support/#api-key
-    )
-    TIME_API_KEY = "awoo"  # Get your API key from https://timezonedb.com/api
-    WALL_API = (
-        "awoo"  # For wallpapers, get one from https://wall.alphacoders.com/api.php
-    )
-    AI_API_KEY = "awoo"  # For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
-    BL_CHATS = []  # List of groups that you want blacklisted.
+    WORKERS = 8
+    ALLOW_EXCL = True
+
+    CASH_API_KEY = "awoo"
+    TIME_API_KEY = "awoo"
+    WALL_API = "awoo"
+    AI_API_KEY = "awoo"
+
+    BL_CHATS = []
     SPAMMERS = None
-    ERROR_LOG_CHANNEL = -1001501815938  # needed to make sure 'save from' messages persist
-    HEROKU_API_KEY = 2088106582  # Your Heroku API key, get it from 'https://dashboard.heroku.com/account
-    HEROKU_APP_NAME = (
-        "awoo"  # Enter the Heroku app name here (Must an exact same name with your input above)
-    )
+    ERROR_LOG_CHANNEL = -1001501815938
+
+    # VPS Version (Heroku & Redis Removed)
     ARQ_API = "awoo"
     APOD_API_KEY = "awoo"
-    REDIS_URL = "awoo"
+
     ANIME_NAME = "Demon Slayer"
-    START_MEDIA = "https://telegra.ph/file/9235d57807362b4e227a3.mp4"
+    START_MEDIA = "https://i.ibb.co/Sjj4Jw5/tmpzyrteemm.jpg"
+
     BOT_USERNAME = "AkazaProbot"
     UPDATE_CHANNEL = "BotLogsX"
-    ALIVE_MEDIA = "https://telegra.ph/file/2b04f7812f22b983f8a10.mp4"
+    ALIVE_MEDIA = "https://i.ibb.co/tTPyXKYf/tmpm84g0mdh.jpg"
     BOT_ID = 5169508699
-    STATS_IMG = "awoo"
+
+    STATS_IMG = "https://i.ibb.co/mjV4LY7/tmpzssniy4z.jpg"
     NETWORK_USERNAME = "TeamXAssociation"
     NETWORK = "T-X"
-    INLINE_IMG = "https://telegra.ph/file/8cec66d01df8c0071ebaa.jpg"
+
+    INLINE_IMG = "https://i.ibb.co/mjV4LY7/tmpzssniy4z.jpg"
     API_WEATHER = "awoo"
-    OWNER_WELCOME_MEDIA = ""
+
+    OWNER_WELCOME_MEDIA = "https://i.ibb.co/mjV4LY7/tmpzssniy4z.jpg"
+
 
 class Production(Config):
     LOGGER = True
