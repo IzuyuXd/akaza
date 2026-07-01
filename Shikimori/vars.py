@@ -68,11 +68,11 @@ if ENV:
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     APOD_API_KEY = os.environ.get("APOD_API_KEY", None)
-    ANIME_NAME = os.environ.get("ANIME_NAME", "Shikimori's Not Just a Cutie")
-    START_MEDIA = os.environ.get("START_MEDIA", "https://telegra.ph/file/9235d57807362b4e227a3.mp4")
+    ANIME_NAME = os.environ.get("ANIME_NAME", "Demon slayer")
+    START_MEDIA = os.environ.get("START_MEDIA", "https://i.ibb.co/Sjj4Jw5/tmpzyrteemm.jpg")
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "micchon_shikimori_bot")
     UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "Shikimori_bot_Updates")
-    ALIVE_MEDIA = os.environ.get("ALIVE_MEDIA", "https://telegra.ph/file/2b04f7812f22b983f8a10.mp4")
+    ALIVE_MEDIA = os.environ.get("ALIVE_MEDIA", "https://i.ibb.co/tTPyXKYf/tmpm84g0mdh.jpg")
     BOT_ID = int(os.environ.get("BOT_ID", "5169508699"))
     STATS_IMG = os.environ.get("STATS_IMG", None)
     NETWORK = os.environ.get("NETWORK", None)
@@ -184,18 +184,15 @@ else:
             "Your blacklisted chats list does not contain valid integers.")
             
 PM_START_TEXT = """
-════════《✧》════════
-𝙺𝚘𝚗𝚗𝚒𝚌𝚑𝚒𝚠𝚊 *{} - 𝚜𝚊𝚗*
+════════《✦》════════
+𝙾𝚜𝚞 *{}*
 
-𝙸 𝚊𝚖 *{}*, 𝚊 𝚐𝚛𝚘𝚞𝚙 𝚖𝚊𝚗𝚊𝚐𝚎𝚖𝚎𝚗𝚝 𝚋𝚘𝚝 𝚋𝚊𝚜𝚎𝚍 𝚘𝚗 𝚝𝚑𝚎 𝚊𝚗𝚒𝚖𝚎 *{}*.
+𝙸 𝚊𝚖 *{}*, 𝚊 𝚙𝚘𝚠𝚎𝚛𝚏𝚞𝚕 𝚐𝚛𝚘𝚞𝚙 𝚖𝚊𝚗𝚊𝚐𝚎𝚛 𝚋𝚘𝚝 𝚒𝚗𝚜𝚙𝚒𝚛𝚎𝚍 𝚋𝚢 *{}*.
 ════════════════
-♡ 𝐔𝐬𝐞𝐫𝐬: `{}`
-♡ 𝐂𝐡𝐚𝐭𝐬: `{}`
-♡ 𝐔𝐩𝐭𝐢𝐦𝐞: `{}`
+⚔ 𝐔𝐬𝐞𝐫𝐬 : `{}`
+⚔ 𝐂𝐡𝐚𝐭𝐬 : `{}`
+⚔ 𝐔𝐩𝐭𝐢𝐦𝐞 : `{}`
 ════════════════
-𝚄𝚜𝚎 `/help` 𝚝𝚘 𝚐𝚘 𝚝𝚑𝚛𝚘𝚞𝚐𝚑 𝚖𝚢 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜.
-════════《✧》════════
+𝚄𝚜𝚎 `/help` 𝚝𝚘 𝚜𝚎𝚎 𝚊𝚕𝚕 𝚖𝚢 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜.
+════════《✦》════════
 """
-
-HELP_STRINGS = """
-𝙲𝚕𝚒𝚌𝚔 𝚘𝚗 𝚝𝚑𝚎 𝚋𝚞𝚝𝚝𝚘𝚗 𝚋𝚎𝚕𝚕𝚘𝚠 𝚝𝚘 𝚐𝚎𝚝 𝚍𝚎𝚜𝚌𝚛𝚒𝚙𝚝𝚒𝚘𝚗 𝚊𝚋𝚘𝚞𝚝 𝚜𝚙𝚎𝚌𝚒𝚏𝚒𝚌𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍."""
