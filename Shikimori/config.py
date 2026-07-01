@@ -60,7 +60,7 @@ class Config(object):
     BOT_USERNAME = "AkazaProbot"
     UPDATE_CHANNEL = "BotLogsX"
     ALIVE_MEDIA = "https://i.ibb.co/tTPyXKYf/tmpm84g0mdh.jpg"
-    BOT_ID = 5169508699
+    BOT_ID = 8692160358
 
     STATS_IMG = "https://i.ibb.co/mjV4LY7/tmpzssniy4z.jpg"
     NETWORK_USERNAME = "TeamXAssociation"
